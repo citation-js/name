@@ -46,6 +46,7 @@
     "@babel/register": "^7.0.0-beta.54",
     "babel-eslint": "^8.2.6",
     "babel-plugin-istanbul": "^4.1.6",
+    "generate-changelog": "^1.7.1",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
     "standard": "^11.0.1"
