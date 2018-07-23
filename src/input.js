@@ -117,7 +117,6 @@ const parseName = function (name = '') {
 
     return nameObject
   } else {
-    logger.warn('[set]', `Could not parse name: '${name}', falling back to literal`)
     return {literal: name}
   }
 }
