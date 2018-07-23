@@ -32,7 +32,7 @@
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "coverage": "nyc npm test",
     "report": "nyc report --reporter=lcov > coverage.lcov",
-    "prepublishOnly": "npm run compile && npm run dist && npm run dist:minify",
+    "prepublishOnly": "npm run babel",
     "preversion": "npm run lint && npm run test"
   },
   "dependencies": {
