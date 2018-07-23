@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 import fs from 'fs'
 import path from 'path'
 import assert from 'assert'
@@ -12,6 +14,10 @@ for (let testType of testTypes) {
 
   fs.readdir(testDir, (err, files) => {
     describe(testType, () => {
+      if (err) {
+        throw err
+      }
+
       for (let file of files) {
         if (!testPattern.test(file)) {
           continue
