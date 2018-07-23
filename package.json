@@ -1,3 +1,43 @@
 {
-  "version": "0.4.0-9"
+  "name": "@citation-js/name",
+  "version": "0.4.0-9",
+  "description": "Name parser",
+  "main": "lib/index.js",
+  "author": "Lars Willighagen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/citation-js/name/issues"
+  },
+  "homepage": "https://github.com/citation-js/name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citation-js/name.git"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "test": "mocha -r @babel/register -R spec test/suite.js",
+    "babel": "babel src -d lib --copy-files",
+    "lint": "standard",
+    "coverage": "nyc npm test",
+    "report": "nyc report --reporter=lcov > coverage.lcov",
+    "prepublishOnly": "npm run compile && npm run dist && npm run dist:minify",
+    "preversion": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.54"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-istanbul": "^4.1.6",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "standard": "^11.0.1"
+  }
 }
