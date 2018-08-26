@@ -1,15 +1,13 @@
 module.exports = {
   "presets": [
     ["@babel/env", {"targets": {
-      "browsers": [
-        "> 1%",
-        "last 10 versions",
-        "ie > 7"
-      ]}
-    }]
+      "node": "6"
+    }}]
   ],
   "plugins": [
-    "@babel/plugin-proposal-unicode-property-regex",
+    ["@babel/plugin-proposal-unicode-property-regex", {
+      useUnicodeFlag: false
+    }],
   ],
   "env": {
     "test": {
