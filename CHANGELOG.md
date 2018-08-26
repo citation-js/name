@@ -1,3 +1,15 @@
+### 0.4.1 (2018-08-26)
+
+Slightly breaking in the sense that the platform support has been set to Node 6.
+
+##### Chores
+
+* **npm:**
+  *  update dependencies ([4bf3d13e](https://github.com/citation-js/name/commit/4bf3d13e562ef29f5ac27a3ccdc239f85c3e5729))
+  *  fix coverage ([c0dcc4f5](https://github.com/citation-js/name/commit/c0dcc4f58f4747012a00ee5a33110eeecd70d3e7))
+* **babel:**  simplify babel config ([80990448](https://github.com/citation-js/name/commit/80990448daff7b4c571e81061015cafe3546ea75))
+* **git:**  Add .directory to gitignore ([8562334d](https://github.com/citation-js/name/commit/8562334d2b9a4030bee705a349d197fb94a0cf4c))
+
 ### 0.4.0 (2018-07-23)
 
 ##### Chores
