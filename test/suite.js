@@ -23,7 +23,7 @@ for (let testType of testTypes) {
           continue
         }
 
-        let {title, input, output: expected, options = []} = require(path.join(__dirname, testType, file))
+        let { title, input, output: expected, options = [] } = require(path.join(__dirname, testType, file))
 
         it(title, () => {
           let actual = name[testType](input, ...options)

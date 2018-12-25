@@ -102,7 +102,7 @@ const parseName = function (name = '') {
   const [family, nonDroppingParticle] = end.split(particleSplitter, 2).reverse()
 
   if (!given && family) {
-    return family.includes(' ') ? {literal: family} : {family}
+    return family.includes(' ') ? { literal: family } : { family }
   } else if (family) {
     const nameObject = {
       'dropping-particle': droppingParticle,
@@ -117,7 +117,7 @@ const parseName = function (name = '') {
 
     return nameObject
   } else {
-    return {literal: name}
+    return { literal: name }
   }
 }
 
